@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+    <!-- Rating state start -->
+    <div class="container">
+        <img class="star" src="images/icon-star.svg" alt="">
+        <h2>How did we do?</h2>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        <!-- <div class="buttons">
+            <input type="radio" name="score" id="1" value="1"> 1
+            <input type="radio" name="score" id="2" value="2"> 2
+            <input type="radio" name="score" id="3" value="3"> 3
+            <input type="radio" name="score" id="4" value="4"> 4
+            <input type="radio" name="score" id="5" value="5"> 5
+        </div> -->
+        <!-- <button name="score" id="score-btn" value="1">1</button>
+        <button name="score" id="score-btn" value="2">2</button>
+        <button name="score" id="score-btn" value="3">3</button>
+        <button name="score" id="score-btn" value="4">4</button>
+        <button name="score" id="score-btn" value="5">5</button> -->
+
+        <form class="rating-form">
+            <input type="radio" name="score" id="1" value="1">
+            <label for="1">1</label>
+
+            <input type="radio" name="score" id="2" value="2">
+            <label for="2">2</label>
+
+            <input type="radio" name="score" id="3" value="3">
+            <label for="3">3</label>
+
+            <input type="radio" name="score" id="4" value="4">
+            <label for="4">4</label>
+
+            <input type="radio" name="score" id="5" value="5">
+            <label for="5">5</label>
+
+            <button onclick="submitbtn()" type="button" id="btn" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="secondFace">
+        <img class="ty-pic" src="images/illustration-thank-you.svg" alt="">
+        <div class="result">You selected <span id="selected"> </span> out of 5</div>
+        <!-- Add rating here -->
+
+        <h2 class="greeting">Thank you!</h2>
+
+        <p class="message">We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+
+
+        <!-- Thank you state end -->
+
+    </div>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Andrés Miranda</a>.
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

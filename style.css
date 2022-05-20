@@ -1,0 +1,170 @@
+html{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-color: #1C232D;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.star {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 100%;
+    border: 0.5rem solid hsl(213, 19%, 18%);
+    
+
+}
+
+h2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 28px;
+}
+p {
+    font-size: 15px;
+    margin-left: 2rem;
+    margin-right: 3rem;
+   }
+
+.btn {
+    
+    width: 340px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    color:  hsl(25, 97%, 53%);
+}
+
+.btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    color: white;
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+   
+    color: white;
+}
+
+.attribution a {
+    color: white;
+    
+}
+
+.secondFace {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-color: #1C232D;
+    border-radius: 2rem;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    display: none;
+} 
+
+.ty-pic {
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.result {
+    text-align: center;
+    margin-top: 1rem;
+    color: #F56C22;
+    
+}
+
+.greeting {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.message {
+    text-align: center;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+     
+    align-items: center; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+    
+}
+
+label{
+    background-color: hsl(213, 19%, 23%);
+    height: 2.75rem;
+    width: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+    
+    
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    transition: all 0.5s;
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+@media (hover: hover) {
+    form label:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+    }
