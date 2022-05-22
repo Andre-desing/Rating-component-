@@ -163,8 +163,9 @@ input:checked + label{
 }
 
 @media (hover: hover) {
-    form label:hover{
-    background-color: hsl(25, 97%, 53%);
-    color: white;
-    cursor: pointer;
+    form label:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+        cursor: pointer;
     }
+}
